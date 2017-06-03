@@ -32,12 +32,11 @@ public class Department {
 	}
 
 	public void setLead(Employee lead) {
-		// TODO Auto-generated method stub
 		this.lead = lead;
 	}
 	
-	public int getLead() {
-		return lead.getEmpId();
+	public Employee getLead() {
+		return lead;
 	}
 
 }
