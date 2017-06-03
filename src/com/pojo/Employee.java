@@ -1,20 +1,17 @@
 package com.pojo;
 
-import java.io.Serializable;
-
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
 @JsonIdentityInfo(generator=ObjectIdGenerators.PropertyGenerator.class, property="empId")
-public class Employee implements Serializable {
+public class Employee {
 
-	static final long serialVersionUID = 1L;
-	int empId;
-	String firstName;
-	String lastName;
-	String city;
-	double salary;
-	Department department;
+	private int empId;
+	private String firstName;
+	private String lastName;
+	private String city;
+	private double salary;
+	private Department department;
 	
 	public Employee(){
 		
@@ -49,15 +46,12 @@ public class Employee implements Serializable {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	
 	public String getCity() {
 		return city;
 	}
-
 	public void setCity(String city) {
 		this.city = city;
 	}
-
 	public double getSalary() {
 		return salary;
 	}
